@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cretix Team</title>
+    <link
+      rel="icon"
+      href="https://i.postimg.cc/1XtWqsRh/540696519-1091424213056496-1424019253789553429-n.png"
+      type="icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/6f0e79ab65.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-gray-50">
+    <div
+      class="main-container mx-4 sm:mx-8 lg:mx-16 xl:mx-24 2xl:mx-[100px] mt-4 sm:mt-6 lg:mt-[30px]"
+    >
+      <header>
+        <nav
+          class="flex flex-col sm:flex-row items-center justify-between shadow-2xl rounded-2xl min-h-[80px] lg:h-[100px] p-4 sm:px-6 lg:px-[30px] bg-white"
+        >
+          <section class="mb-4 sm:mb-0">
+            <ul
+              class="flex flex-wrap justify-center sm:justify-between gap-4 sm:gap-8 lg:w-[380px] font-semibold text-lg sm:text-xl lg:text-3xl"
+            >
+              <li class="cursor-pointer hover:opacity-[0.7] transition-all">
+                Home
+              </li>
+              <button
+                onclick="
+              document.querySelector('.about-layer').classList.toggle('hidden')
+              "
+              >
+                <li class="cursor-pointer hover:opacity-[0.7] transition-all">
+                  About
+                </li>
+              </button>
+
+              <li class="cursor-pointer hover:opacity-[0.7] transition-all">
+                Contact
+              </li>
+            </ul>
+          </section>
+          <section
+            class="flex text-3xl sm:text-4xl lg:text-5xl items-center gap-4 lg:gap-5"
+          >
+            <a href="https://www.instagram.com/cretix_team/" target="_blank"
+              ><i
+                class="fa-brands fa-square-instagram hover:opacity-[0.7] transition-all cursor-pointer duration-500"
+              ></i
+            ></a>
+            <a href="https://www.tiktok.com/@cretixteam" target="_blank"
+              ><i
+                class="fa-brands fa-tiktok hover:opacity-[0.7] transition-all cursor-pointer duration-500"
+              ></i
+            ></a>
+            <a href="https://www.youtube.com/@CRETIX-CET" target="_blank"
+              ><i
+                class="fa-brands fa-youtube hover:opacity-[0.7] transition-all cursor-pointer duration-500"
+              ></i
+            ></a>
+          </section>
+        </nav>
+      </header>
+
+      <main>
+        <section class="flex justify-center mt-12 sm:mt-16 lg:mt-[100px]">
+          <p class="text-8xl font-bold text-center">Cretix</p>
+        </section>
+
+        <section class="flex justify-center mt-12 sm:mt-16 lg:mt-[100px]">
+          <p class="text-3xl sm:text-4xl lg:text-6xl font-bold text-center">
+            Our Work
+          </p>
+        </section>
+
+        <section
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 mt-8 sm:mt-12 lg:mt-[50px] px-4 sm:px-0"
+        >
+          <button
+            onclick="
+            document.querySelector('.layer1').classList.toggle('hidden')
+            document.querySelector('.layer1').classList.toggle('flex')
+            "
+          >
+            <div
+              class="w-full max-w-[350px] mx-auto h-[300px] sm:h-[350px] rounded-2xl shadow-2xl flex justify-center items-center flex-col px-6 cursor-pointer hover:opacity-60 transition duration-700 bg-white"
+            >
+              <i
+                class="fa-solid fa-video text-5xl sm:text-6xl lg:text-8xl mb-4"
+              ></i>
+              <p class="font-bold text-xl sm:text-2xl lg:text-3xl mb-2">
+                Video editing
+              </p>
+              <p class="text-center text-sm sm:text-base">
+                Making awesome videos with attention to details
+              </p>
+            </div>
+          </button>
+
+          <button
+            onclick="
+            document.querySelector('.layer2').classList.toggle('hidden')
+            document.querySelector('.layer2').classList.toggle('flex')
+            "
+          >
+            <div
+              class="w-full max-w-[350px] mx-auto h-[300px] sm:h-[350px] rounded-2xl shadow-2xl flex justify-center items-center flex-col px-6 cursor-pointer hover:opacity-60 transition duration-700 bg-white"
+            >
+              <i
+                class="fa-solid fa-code text-5xl sm:text-6xl lg:text-8xl mb-4"
+              ></i>
+              <p class="font-bold text-xl sm:text-2xl lg:text-3xl mb-2">
+                Programming
+              </p>
+              <p class="text-center text-sm sm:text-base">Web Development</p>
+            </div>
+          </button>
+
+          <button
+            onclick="
+            document.querySelector('.layer3').classList.toggle('hidden')
+            document.querySelector('.layer3').classList.toggle('flex')
+          "
+          >
+            <div
+              class="w-full max-w-[350px] mx-auto h-[300px] sm:h-[350px] rounded-2xl shadow-2xl flex justify-center items-center flex-col px-6 cursor-pointer hover:opacity-60 transition duration-700 bg-white md:col-span-2 xl:col-span-1"
+            >
+              <i
+                class="fa-solid fa-pen-ruler text-5xl sm:text-6xl lg:text-8xl mb-4"
+              ></i>
+              <p class="font-bold text-xl sm:text-2xl lg:text-3xl mb-2">
+                Design
+              </p>
+              <p class="text-center text-sm sm:text-base">
+                Graphic design, UI/UX and branding
+              </p>
+            </div>
+          </button>
+        </section>
+
+        <!-- About us modal -->
+        <div class="about-layer hidden">
+          <!-- add hidden -->
+          <p class="bg-white font-semibold shadow-2xl p-5 rounded-2xl fixed inset-5 flex flex-col items-center">
+            <button class="absolute text-4xl left-10 hover:opacity-60 transition-all duration-500" onclick="
+              document.querySelector('.about-layer').classList.toggle('hidden')
+              ">Back</button>
+              <span class="text-4xl font-semibold mb-10">About Us</span>
+              <span class="text-3xl text-center">
+              At Cretix, we believe that digital success starts with innovative solutions and professional services that truly make an impact. We help individuals and businesses build a strong digital presence that reflects their identity and inspires their audience — driven by creativity, quality, and attention to detail.</span>
+            </p>
+        </div>
+        <!-- Footer section -->
+        <footer
+          class="flex justify-center mt-16 sm:mt-20 lg:mt-[100px] flex-col items-center"
+        >
+          <section>
+            <p class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center">
+              Get in touch
+            </p>
+          </section>
+          <section>
+            <a href="https://www.instagram.com/cretix_team/" target="_blank"
+              ><i
+                class="fa-brands fa-square-instagram hover:opacity-[0.7] text-5xl mt-10 mb-10 transition-all cursor-pointer duration-500"
+              ></i
+            ></a>
+          </section>
+        </footer>
+      </main>
+    </div>
+
+    <!-- Video Editing Modal -->
+    <div class="flex justify-center relative">
+      <div
+        class="layer1 flex-col items-center fixed inset-4 sm:inset-8 lg:inset-5 bg-white shadow-xl rounded-2xl hidden overflow-auto z-50"
+      >
+        <button
+          onclick="
+        document.querySelector('.layer1').classList.toggle('hidden')
+        document.querySelector('.layer1').classList.toggle('flex')
+        "
+          class="absolute top-4 left-4 sm:top-6 sm:left-6 z-10"
+        >
+          <p
+            class="text-2xl sm:text-3xl lg:text-4xl cursor-pointer hover:opacity-60 transition-opacity duration-300 font-semibold bg-white rounded-2xl p-2 sm:p-[5px]"
+          >
+            Back
+          </p>
+        </button>
+
+        <p
+          class="mt-16 sm:mt-20 text-2xl sm:text-3xl font-semibold flex items-center justify-center text-center"
+        >
+          Video-Editing
+          <i
+            class="fa-solid fa-video text-3xl sm:text-5xl ml-2 sm:ml-[10px]"
+          ></i>
+        </p>
+
+        <div
+          class="portfolio mt-8 sm:mt-12 lg:mt-[80px] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 w-full px-4 sm:px-8 pb-8"
+        >
+          <div
+            class="bg-white rounded-2xl shadow-2xl border-b-4 border-t-4 border-black p-2"
+          >
+            <iframe
+              class="w-full h-[200px] sm:h-[250px] lg:h-[300px] rounded-xl"
+              src="https://www.youtube.com/embed/6qA_GLh7mxQ"
+              title="Certix Team Works Editor"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div
+            class="bg-white rounded-2xl shadow-2xl border-b-4 border-t-4 border-black p-2"
+          >
+            <iframe
+              class="w-full h-[200px] sm:h-[250px] lg:h-[300px] rounded-xl"
+              src="https://www.youtube.com/embed/UGqqDPp37Gw"
+              title="Certix Team Works Editor"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div
+            class="bg-white rounded-2xl shadow-2xl border-b-4 border-t-4 border-black p-2"
+          >
+            <iframe
+              class="w-full h-[200px] sm:h-[250px] lg:h-[300px] rounded-xl"
+              src="https://www.youtube.com/embed/_JvuEIovXkU"
+              title="Certix Team Works Editor"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div
+            class="bg-white rounded-2xl shadow-2xl border-b-4 border-t-4 border-black p-2"
+          >
+            <iframe
+              class="w-full h-[200px] sm:h-[250px] lg:h-[300px] rounded-xl"
+              src="https://www.youtube.com/embed/6qA_GLh7mxQ"
+              title="Certix Team Works Editor"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web Development Modal -->
+    <div class="flex justify-center relative">
+      <div
+        class="layer2 flex-col items-center fixed inset-4 sm:inset-8 lg:inset-5 bg-white shadow-xl rounded-2xl overflow-auto hidden z-50"
+      >
+        <button
+          onclick="
+        document.querySelector('.layer2').classList.toggle('hidden')
+        document.querySelector('.layer2').classList.toggle('flex')
+        "
+          class="absolute top-4 left-4 sm:top-6 sm:left-6 z-10"
+        >
+          <p
+            class="text-2xl sm:text-3xl lg:text-4xl cursor-pointer hover:opacity-60 transition-opacity duration-300 font-semibold bg-white rounded-2xl p-2 sm:p-[5px]"
+          >
+            Back
+          </p>
+        </button>
+
+        <p
+          class="mt-16 sm:mt-20 text-2xl sm:text-3xl font-semibold flex justify-center items-center text-center"
+        >
+          Web Development
+          <i class="fa-solid fa-code text-xl sm:text-3xl ml-2 sm:ml-[10px]"></i>
+        </p>
+
+        <div
+          class="portfolio mt-8 sm:mt-12 lg:mt-[80px] grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 w-full px-4 sm:px-8 pb-8"
+        >
+          <div class="space-y-4">
+            <div
+              class="bg-white rounded-2xl shadow-2xl border-b-4 border-t-4 border-black overflow-hidden cursor-pointer hover:opacity-75 transition-all duration-500"
+            >
+              <img
+                src="https://www2.0zz0.com/2025/08/26/20/623728452.jpg"
+                class="w-full h-[200px] sm:h-[250px] object-cover"
+                alt="Web Development Project 1"
+              />
+            </div>
+            <div
+              class="bg-white rounded-2xl shadow-2xl border-b-4 border-t-4 border-black overflow-hidden cursor-pointer hover:opacity-75 transition-all duration-500"
+            >
+              <img
+                src="https://www2.0zz0.com/2025/08/26/20/211053900.png"
+                class="w-full h-[200px] sm:h-[250px] object-cover"
+                alt="Web Development Project 2"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div
+              class="bg-white rounded-2xl shadow-2xl border-b-4 border-t-4 border-black overflow-hidden cursor-pointer hover:opacity-75 transition-all duration-500"
+            >
+              <img
+                src="https://www2.0zz0.com/2025/08/26/20/415756573.png"
+                class="w-full h-[200px] sm:h-[250px] object-cover"
+                alt="Web Development Project 3"
+              />
+            </div>
+            <div
+              class="bg-white rounded-2xl shadow-2xl border-b-4 border-t-4 border-black overflow-hidden cursor-pointer hover:opacity-75 transition-all duration-500"
+            >
+              <img
+                src="https://imgg.io/images/2025/08/26/8bd6fc995e6efbeb889fcca2a3bb3b29.webp"
+                class="w-full h-[200px] sm:h-[250px] object-cover"
+                alt="Web Development Project 4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Design Modal -->
+    <div class="flex justify-center relative">
+      <div
+        class="layer3 flex-col items-center fixed inset-4 sm:inset-8 lg:inset-5 bg-white shadow-xl rounded-2xl overflow-auto hidden z-50"
+      >
+        <button
+          onclick="
+        document.querySelector('.layer3').classList.toggle('hidden')
+        document.querySelector('.layer3').classList.toggle('flex')
+        "
+          class="absolute top-4 left-4 sm:top-6 sm:left-6 z-10"
+        >
+          <p
+            class="text-2xl sm:text-3xl lg:text-4xl cursor-pointer hover:opacity-60 transition-opacity duration-300 font-semibold bg-white rounded-2xl p-2 sm:p-[5px]"
+          >
+            Back
+          </p>
+        </button>
+
+        <p
+          class="mt-16 sm:mt-20 text-2xl sm:text-3xl font-semibold flex justify-center items-center text-center"
+        >
+          Graphic Design UI/UX
+          <i
+            class="fa-solid fa-pen-ruler text-xl sm:text-3xl ml-2 sm:ml-[10px]"
+          ></i>
+        </p>
+
+        <div
+          class="portfolio mt-8 sm:mt-12 lg:mt-[80px] grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 w-full px-4 sm:px-8 pb-8"
+        >
+          <div class="space-y-4">
+            <div
+              class="bg-white rounded-2xl shadow-2xl border-b-4 border-t-4 border-black overflow-hidden cursor-pointer hover:opacity-75 transition-all duration-500"
+            >
+              <img
+                src="https://imgg.io/images/2025/08/26/277ba299b2c5c368cf292b0945ce1788.webp"
+                class="w-full h-[200px] sm:h-[250px] object-cover"
+                alt="Design Project 1"
+              />
+            </div>
+            <div
+              class="bg-white rounded-2xl shadow-2xl border-b-4 border-t-4 border-black overflow-hidden cursor-pointer hover:opacity-75 transition-all duration-500"
+            >
+              <img
+                src="https://imgg.io/images/2025/08/26/5ff884313d9b6edb3630ecccdca6427e.webp"
+                class="w-full h-[200px] sm:h-[250px] object-cover"
+                alt="Design Project 2"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="bg-white rounded-2xl shadow-2xl border-b-4 border-t-4 border-black p-2 cursor-pointer hover:opacity-75 transition-all duration-500 h-full"
+            >
+              <iframe
+                class="w-full h-[300px] sm:h-[400px] lg:h-[480px] rounded-xl"
+                src="https://www.youtube.com/embed/7aAHw091-Ls"
+                title="Certix Team Works Designer"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
